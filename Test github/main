@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+class VECTO{
+		float x,y;
+	public:
+		friend ostream& 
+		friend VECTO operator+(VECTO a, VECTO b){
+			VECTO temp;
+			temp.x=b.x+a.x;
+			temp.y=b.y+a.y;
+			return temp;
+		}
+};
+int main(){
+	VECTO a,b;
+	a.nhap();
+	cout<<"\n";
+	b.nhap();
+	cout<<"\n";
+	(a+b).xuat();
+}
